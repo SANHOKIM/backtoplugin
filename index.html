@@ -48,5 +48,25 @@
         <div class="swiper-button-next"></div>
       </div>
     </section>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        direction: "vertical",
+        loop: true,
+
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
